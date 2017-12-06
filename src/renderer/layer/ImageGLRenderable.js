@@ -85,7 +85,7 @@ const ImageGLRenderable = Base => {
          * @param {Array} indices   - element indexes
          * @param {number} opacity
          */
-        drawGLTin(image, vertices, texCoords, indices, opacity) {
+        drawTinImage(image, vertices, texCoords, indices, opacity) {
             const gl = this.gl;
             this.loadTexture(image);
             gl.uniformMatrix4fv(this.program['u_matrix'], false, this.getProjViewMatrix());
